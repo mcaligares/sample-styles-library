@@ -1,0 +1,11 @@
+@mixin forMobileScreen {
+  @media screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin hideForMobileScreen {
+  @include forMobileScreen {
+    display: none;
+  }
+}

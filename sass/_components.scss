@@ -1,0 +1,43 @@
+.component-list {
+  display: flex;
+  flex-direction: column;
+
+  .component-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include forMobileScreen {
+      flex-wrap: wrap;
+    };
+    &__title {
+      flex-grow: 1;
+      padding: 10px;
+      text-transform: capitalize;
+      font-size: $component-title-size;
+      @include forMobileScreen {
+        text-align: center;
+      }
+    }
+    &__search {
+      flex-grow: 1;
+      padding: 10px;
+      text-align: right;
+      @include forMobileScreen {
+        text-align: center;
+      }
+    }
+  }
+
+  .component-body {
+    height: 70vh;
+    padding: 5px;
+    overflow-y: scroll;
+    .component-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+}

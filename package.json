@@ -1,0 +1,18 @@
+{
+  "name": "sample-styles-library",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./sass/sample-styles-library.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mcaligares@gmail.com",
+  "license": "MIT",
+  "files": [
+    "sass",
+    "styles.sass"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
