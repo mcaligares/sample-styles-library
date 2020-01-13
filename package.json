@@ -4,15 +4,15 @@
   "description": "",
   "main": "./sass/sample-styles-library.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass ./sass/sample-styles-library.scss ./dist/style.css"
   },
   "author": "mcaligares@gmail.com",
   "license": "MIT",
   "files": [
-    "sass",
-    "styles.sass"
+    "sass"
   ],
   "dependencies": {
+    "node-sass": "^4.13.0",
     "normalize.css": "^8.0.1"
   }
 }

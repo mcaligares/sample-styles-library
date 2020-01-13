@@ -1,0 +1,40 @@
+@import url(~normalize.css);
+input {
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem; }
+
+.component-list {
+  display: flex;
+  flex-direction: column; }
+  .component-list .component-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media screen and (max-width: 425px) {
+      .component-list .component-header {
+        flex-wrap: wrap; } }
+    .component-list .component-header__title {
+      flex-grow: 1;
+      padding: 10px;
+      text-transform: capitalize;
+      font-size: 2rem; }
+      @media screen and (max-width: 425px) {
+        .component-list .component-header__title {
+          text-align: center; } }
+    .component-list .component-header__search {
+      flex-grow: 1;
+      padding: 10px;
+      text-align: right; }
+      @media screen and (max-width: 425px) {
+        .component-list .component-header__search {
+          text-align: center; } }
+  .component-list .component-body {
+    height: 70vh;
+    padding: 5px;
+    overflow-y: scroll; }
+    .component-list .component-body .component-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
