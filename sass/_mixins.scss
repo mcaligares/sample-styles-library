@@ -1,3 +1,9 @@
+@mixin forTabletScreen {
+  @media screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
 @mixin forMobileScreen {
   @media screen and (max-width: $mobile-width) {
     @content;
